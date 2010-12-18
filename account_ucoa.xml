@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <tryton>
     <data>
-        <record model="account.account.type.template" id="account_type_template_ucoa">
-            <field name="name">Unified Account Type Chart</field>
-            <field name="sequence" eval="10"/>
-        </record>
         
+        <record model="account.account.template" id="root">
+		<field name="name">Unified Chart of Accounts</field>
+		<field name="kind">view</field>
+	</record>
+	
         <record model="account.account.template" id="1">
 		<field name="name">Assets</field>
 		<field name="code">1</field>
