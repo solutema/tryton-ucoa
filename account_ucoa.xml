@@ -9,68 +9,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="sequence" eval="10"/>
         </record>
         
-        <record model="account.account.type.template"
-            id="account_type_template_asset">
-            <field name="name">Asset</field>
-            <field name="sequence" eval="10"/>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="balance_sheet" eval="True"/>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_liability">
-            <field name="name">Liability</field>
-            <field name="sequence" eval="20"/>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="balance_sheet" eval="True"/>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_equity">
-            <field name="name">Equity</field>
-            <field name="sequence" eval="30"/>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="balance_sheet" eval="True"/>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_support">
-            <field name="name">Contributions and Support</field>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="sequence" eval="40"/>
-            <field name="income_statement" eval="True"/>
-            <field name="display_balance">credit-debit</field>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_revenue">
-            <field name="name">Revenue</field>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="sequence" eval="50"/>
-            <field name="display_balance">credit-debit</field>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_expense">
-            <field name="name">Expense</field>
-            <field name="parent" ref="account_type_template_ucoa"/>
-            <field name="sequence" eval="70"/>
-            <field name="display_balance">credit-debit</field>
-        </record>
-        
-        <record model="account.account.type.template"
-            id="account_type_template_off_balance">
-            <field name="name">Off-Balance</field>
-            <field name="sequence" eval="90"/>
-            <field name="parent" ref="account_type_template_ucoa"/>
-        </record>
-        
-        <record model="account.account.template" id="root">
-            <field name="name">Unified Chart of Accounts</field>
-            <field name="kind">view</field>
-            <field name="type" ref="account_type_template_ucoa"/>
-        </record>
-
         <record model="account.account.template" id="1">
 		<field name="name">Assets</field>
 		<field name="code">1</field>
