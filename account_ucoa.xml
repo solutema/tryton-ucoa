@@ -21,28 +21,28 @@
 		<record model="account.account.template" id="1010">
 		<field name="name">Cash in bank-operating</field>
 		<field name="code">1010</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">cash</field>
 		<field name="parent" ref="1000" />
 		</record>
 		<record model="account.account.template" id="1020">
 		<field name="name">Cash in bank-payroll</field>
 		<field name="code">1020</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">cash</field>
 		<field name="parent" ref="1000" />
 		</record>
 		<record model="account.account.template" id="1040">
 		<field name="name">Petty cash</field>
 		<field name="code">1040</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">cash</field>
 		<field name="parent" ref="1000" />
 		</record>
 		<record model="account.account.template" id="1070">
 		<field name="name">Savings and short-term investments</field>
 		<field name="code">1070</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">cash</field>
 		<field name="parent" ref="1000" />
 		</record>
@@ -55,14 +55,14 @@
 		<record model="account.account.template" id="1110">
 		<field name="name">Accounts receivable</field>
 		<field name="code">1110</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1100" />
 		</record>
 		<record model="account.account.template" id="1115">
 		<field name="name">Doubtful accounts allowance</field>
 		<field name="code">1115</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1100" />
 		</record>
@@ -75,35 +75,35 @@
 		<record model="account.account.template" id="1210">
 		<field name="name">Pledges receivable</field>
 		<field name="code">1210</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1200" />
 		</record>
 		<record model="account.account.template" id="1215">
 		<field name="name">Doubtful pledges allowance</field>
 		<field name="code">1215</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1200" />
 		</record>
 		<record model="account.account.template" id="1225">
 		<field name="name">Discounts - long-term pledges</field>
 		<field name="code">1225</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1200" />
 		</record>
 		<record model="account.account.template" id="1240">
 		<field name="name">Grants receivable</field>
 		<field name="code">1240</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1200" />
 		</record>
 		<record model="account.account.template" id="1245">
 		<field name="name">Discounts - long-term grants</field>
 		<field name="code">1245</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">accounts receivables</field>
 		<field name="parent" ref="1200" />
 		</record>
@@ -116,21 +116,21 @@
 		<record model="account.account.template" id="1310">
 		<field name="name">Employee and trustee receivables</field>
 		<field name="code">1310</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1300" />
 		</record>
 		<record model="account.account.template" id="1320">
 		<field name="name">Notes/loans receivable</field>
 		<field name="code">1320</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1300" />
 		</record>
 		<record model="account.account.template" id="1325">
 		<field name="name">Doubtful notes/loans allowance</field>
 		<field name="code">1325</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1300" />
 		</record>
@@ -143,28 +143,28 @@
 		<record model="account.account.template" id="1410">
 		<field name="name">Inventories for sale</field>
 		<field name="code">1410</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1400" />
 		</record>
 		<record model="account.account.template" id="1420">
 		<field name="name">Inventories for use</field>
 		<field name="code">1420</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1400" />
 		</record>
 		<record model="account.account.template" id="1450">
 		<field name="name">Prepaid expenses</field>
 		<field name="code">1450</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1400" />
 		</record>
 		<record model="account.account.template" id="1460">
 		<field name="name">Accrued revenues</field>
 		<field name="code">1460</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1400" />
 		</record>
@@ -177,35 +177,35 @@
 		<record model="account.account.template" id="1510">
 		<field name="name">Marketable securities</field>
 		<field name="code">1510</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1500" />
 		</record>
 		<record model="account.account.template" id="1530">
 		<field name="name">Land held for investment</field>
 		<field name="code">1530</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1500" />
 		</record>
 		<record model="account.account.template" id="1540">
 		<field name="name">Buildings held for investment</field>
 		<field name="code">1540</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1500" />
 		</record>
 		<record model="account.account.template" id="1545">
 		<field name="name">Accum deprec - bldg investment</field>
 		<field name="code">1545</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1500" />
 		</record>
 		<record model="account.account.template" id="1580">
 		<field name="name">Investments - other</field>
 		<field name="code">1580</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other current asset</field>
 		<field name="parent" ref="1500" />
 		</record>
@@ -218,42 +218,42 @@
 		<record model="account.account.template" id="1610">
 		<field name="name">Land - operating</field>
 		<field name="code">1610</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
 		<record model="account.account.template" id="1620">
 		<field name="name">Buildings - operating</field>
 		<field name="code">1620</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
 		<record model="account.account.template" id="1630">
 		<field name="name">Leasehold improvements</field>
 		<field name="code">1630</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
 		<record model="account.account.template" id="1640">
 		<field name="name">Furniture, fixtures, and equip</field>
 		<field name="code">1640</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
 		<record model="account.account.template" id="1650">
 		<field name="name">Vehicles</field>
 		<field name="code">1650</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
 		<record model="account.account.template" id="1660">
 		<field name="name">Construction in progress</field>
 		<field name="code">1660</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1600" />
 		</record>
@@ -266,56 +266,56 @@
 		<record model="account.account.template" id="1725">
 		<field name="name">Accum deprec - building</field>
 		<field name="code">1725</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1700" />
 		</record>
 		<record model="account.account.template" id="1735">
 		<field name="name">Accum amort - leasehold improvements</field>
 		<field name="code">1735</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1700" />
 		</record>
 		<record model="account.account.template" id="1745">
 		<field name="name">Accum deprec - furn,fix,equip</field>
 		<field name="code">1745</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1700" />
 		</record>
 		<record model="account.account.template" id="1755">
 		<field name="name">Accum deprec - vehicles</field>
 		<field name="code">1755</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">fixed asset</field>
 		<field name="parent" ref="1700" />
 		</record>
 		<record model="account.account.template" id="1810">
 		<field name="name">Other long-term assets</field>
 		<field name="code">1810</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other asset</field>
 		<field name="parent" ref="1" />
 		</record>
 		<record model="account.account.template" id="1850">
 		<field name="name">Split-interest agreements</field>
 		<field name="code">1850</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other asset</field>
 		<field name="parent" ref="1" />
 		</record>
 		<record model="account.account.template" id="1910">
 		<field name="name">Collections - art, etc</field>
 		<field name="code">1910</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other asset</field>
 		<field name="parent" ref="1" />
 		</record>
 		<record model="account.account.template" id="1950">
 		<field name="name">Funds held in trust by others</field>
 		<field name="code">1950</field>
-		<field name="kind">asset</field>
+		<field name="kind">other</field>
 		<field name="type">other asset</field>
 		<field name="parent" ref="1" />
 		</record>
@@ -334,14 +334,14 @@
 		<record model="account.account.template" id="2010">
 		<field name="name">Accounts payable</field>
 		<field name="code">2010</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">accounts payable</field>
 		<field name="parent" ref="2000" />
 		</record>
 		<record model="account.account.template" id="2020">
 		<field name="name">Grants and allocations payable</field>
 		<field name="code">2020</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">accounts payable</field>
 		<field name="parent" ref="2000" />
 		</record>
@@ -354,35 +354,35 @@
 		<record model="account.account.template" id="2110">
 		<field name="name">Accrued payroll</field>
 		<field name="code">2110</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2100" />
 		</record>
 		<record model="account.account.template" id="2120">
 		<field name="name">Accrued paid leave</field>
 		<field name="code">2120</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2100" />
 		</record>
 		<record model="account.account.template" id="2130">
 		<field name="name">Accrued payroll taxes</field>
 		<field name="code">2130</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2100" />
 		</record>
 		<record model="account.account.template" id="2140">
 		<field name="name">Accrued sales taxes</field>
 		<field name="code">2140</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2100" />
 		</record>
 		<record model="account.account.template" id="2150">
 		<field name="name">Accrued expenses - other</field>
 		<field name="code">2150</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2100" />
 		</record>
@@ -395,21 +395,21 @@
 		<record model="account.account.template" id="2310">
 		<field name="name">Deferred contract revenue</field>
 		<field name="code">2310</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2300" />
 		</record>
 		<record model="account.account.template" id="2350">
 		<field name="name">Unearned/deferred revenue - other</field>
 		<field name="code">2350</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2300" />
 		</record>
 		<record model="account.account.template" id="2410">
 		<field name="name">Refundable advances</field>
 		<field name="code">2410</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2" />
 		</record>
@@ -422,35 +422,35 @@
 		<record model="account.account.template" id="2510">
 		<field name="name">Trustee and employee loans payable</field>
 		<field name="code">2510</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2500" />
 		</record>
 		<record model="account.account.template" id="2550">
 		<field name="name">Line of credit</field>
 		<field name="code">2550</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2500" />
 		</record>
 		<record model="account.account.template" id="2560">
 		<field name="name">Current portion - long-term loan</field>
 		<field name="code">2560</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2500" />
 		</record>
 		<record model="account.account.template" id="2570">
 		<field name="name">Short-term liabilities - other</field>
 		<field name="code">2570</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">other current liability</field>
 		<field name="parent" ref="2500" />
 		</record>
 		<record model="account.account.template" id="2610">
 		<field name="name">Split-interest liabilities</field>
 		<field name="code">2610</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2" />
 		</record>
@@ -463,42 +463,42 @@
 		<record model="account.account.template" id="2710">
 		<field name="name">Bonds payable</field>
 		<field name="code">2710</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2700" />
 		</record>
 		<record model="account.account.template" id="2730">
 		<field name="name">Mortgages payable</field>
 		<field name="code">2730</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2700" />
 		</record>
 		<record model="account.account.template" id="2750">
 		<field name="name">Capital leases</field>
 		<field name="code">2750</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2700" />
 		</record>
 		<record model="account.account.template" id="2770">
 		<field name="name">Long-term liabilities - other</field>
 		<field name="code">2770</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2700" />
 		</record>
 		<record model="account.account.template" id="2810">
 		<field name="name">Gov't-owned fixed assets liability</field>
 		<field name="code">2810</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2" />
 		</record>
 		<record model="account.account.template" id="2910">
 		<field name="name">Custodial funds</field>
 		<field name="code">2910</field>
-		<field name="kind">liability</field>
+		<field name="kind">payable</field>
 		<field name="type">long term liability</field>
 		<field name="parent" ref="2" />
 		</record>
@@ -517,28 +517,28 @@
 		<record model="account.account.template" id="3010">
 		<field name="name">Unrestricted net assets</field>
 		<field name="code">3010</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3000" />
 		</record>
 		<record model="account.account.template" id="3020">
 		<field name="name">Board-designated net assets</field>
 		<field name="code">3020</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3000" />
 		</record>
 		<record model="account.account.template" id="3030">
 		<field name="name">Board designated quasi-endowment</field>
 		<field name="code">3030</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3000" />
 		</record>
 		<record model="account.account.template" id="3040">
 		<field name="name">Fixed operating net assets</field>
 		<field name="code">3040</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3000" />
 		</record>
@@ -551,14 +551,14 @@
 		<record model="account.account.template" id="3110">
 		<field name="name">Use restricted net assets</field>
 		<field name="code">3110</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3100" />
 		</record>
 		<record model="account.account.template" id="3120">
 		<field name="name">Time restricted net assets</field>
 		<field name="code">3120</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3100" />
 		</record>
@@ -571,7 +571,7 @@
 		<record model="account.account.template" id="3210">
 		<field name="name">Endowment net assets</field>
 		<field name="code">3210</field>
-		<field name="kind">equity</field>
+		<field name="kind">other</field>
 		<field name="type">equity</field>
 		<field name="parent" ref="3200" />
 		</record>
@@ -590,35 +590,35 @@
 		<record model="account.account.template" id="4010">
 		<field name="name">Individual/small business contributions</field>
 		<field name="code">4010</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4000" />
 		</record>
 		<record model="account.account.template" id="4020">
 		<field name="name">Corporate contributions</field>
 		<field name="code">4020</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4000" />
 		</record>
 		<record model="account.account.template" id="4070">
 		<field name="name">Legacies and bequests</field>
 		<field name="code">4070</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4000" />
 		</record>
 		<record model="account.account.template" id="4075">
 		<field name="name">Uncollectible pledges - estimated</field>
 		<field name="code">4075</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4000" />
 		</record>
 		<record model="account.account.template" id="4085">
 		<field name="name">Long-term pledges discount</field>
 		<field name="code">4085</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4000" />
 		</record>
@@ -631,35 +631,35 @@
 		<record model="account.account.template" id="4110">
 		<field name="name">Donated professional services-GAAP</field>
 		<field name="code">4110</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4100" />
 		</record>
 		<record model="account.account.template" id="4120">
 		<field name="name">Donated other services - non-GAAP</field>
 		<field name="code">4120</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4100" />
 		</record>
 		<record model="account.account.template" id="4130">
 		<field name="name">Donated use of facilities</field>
 		<field name="code">4130</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4100" />
 		</record>
 		<record model="account.account.template" id="4140">
 		<field name="name">Gifts in kind - goods</field>
 		<field name="code">4140</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4100" />
 		</record>
 		<record model="account.account.template" id="4150">
 		<field name="name">Donated art, etc</field>
 		<field name="code">4150</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4100" />
 		</record>
@@ -672,28 +672,28 @@
 		<record model="account.account.template" id="4210">
 		<field name="name">Corporate/business grants</field>
 		<field name="code">4210</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4200" />
 		</record>
 		<record model="account.account.template" id="4230">
 		<field name="name">Foundation/trust grants</field>
 		<field name="code">4230</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4200" />
 		</record>
 		<record model="account.account.template" id="4250">
 		<field name="name">Nonprofit organization grants</field>
 		<field name="code">4250</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4200" />
 		</record>
 		<record model="account.account.template" id="4255">
 		<field name="name">Discounts - long-term grants</field>
 		<field name="code">4255</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4200" />
 		</record>
@@ -706,14 +706,14 @@
 		<record model="account.account.template" id="4310">
 		<field name="name">Split-interest agreement contributions</field>
 		<field name="code">4310</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4300" />
 		</record>
 		<record model="account.account.template" id="4350">
 		<field name="name">Gain (loss) split-interest agreements</field>
 		<field name="code">4350</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4300" />
 		</record>
@@ -726,21 +726,21 @@
 		<record model="account.account.template" id="4410">
 		<field name="name">United Way or CFC contributions</field>
 		<field name="code">4410</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4400" />
 		</record>
 		<record model="account.account.template" id="4420">
 		<field name="name">Affiliated organizations revenue</field>
 		<field name="code">4420</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4400" />
 		</record>
 		<record model="account.account.template" id="4430">
 		<field name="name">Fundraising agencies revenue</field>
 		<field name="code">4430</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4400" />
 		</record>
@@ -753,28 +753,28 @@
 		<record model="account.account.template" id="4510">
 		<field name="name">Agency (government) grants</field>
 		<field name="code">4510</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4500" />
 		</record>
 		<record model="account.account.template" id="4520">
 		<field name="name">Federal grants</field>
 		<field name="code">4520</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4500" />
 		</record>
 		<record model="account.account.template" id="4530">
 		<field name="name">State grants</field>
 		<field name="code">4530</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4500" />
 		</record>
 		<record model="account.account.template" id="4540">
 		<field name="name">Local government grants</field>
 		<field name="code">4540</field>
-		<field name="kind">support</field>
+		<field name="kind">revenue</field>
 		<field name="type">income</field>
 		<field name="parent" ref="4500" />
 		</record>
