@@ -3,8 +3,7 @@
 this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
-        <record model="account.account.type.template"
-            id="account_type_template_ucoa">
+        <record model="account.account.type.template" id="account_type_template_ucoa">
             <field name="name">Unified Account Type Chart</field>
             <field name="sequence" eval="10"/>
         </record>
