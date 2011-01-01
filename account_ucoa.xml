@@ -2,10 +2,113 @@
 <tryton>
     <data>
         
+<record model="account.account.type.template"
+            id="account_type_template_ucoa">
+            <field name="name">Unified Chart of Accounts</field>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset">
+            <field name="name">Asset</field>
+            <field name="sequence" eval="10"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
+            <field name="balance_sheet" eval="True"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_current">
+            <field name="name">Current</field>
+            <field name="parent" ref="account_type_template_asset"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_current_cash">
+            <field name="name">Cash</field>
+            <field name="parent" ref="account_type_template_asset_current"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_current_receivable">
+            <field name="name">Receivable</field>
+            <field name="parent" ref="account_type_template_asset_current"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_long_term">
+            <field name="name">Long-term</field>
+            <field name="parent" ref="account_type_template_asset"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability">
+            <field name="name">Liability</field>
+            <field name="sequence" eval="20"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
+            <field name="balance_sheet" eval="True"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_current">
+            <field name="name">Current</field>
+            <field name="parent" ref="account_type_template_liability"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_current_payable">
+            <field name="name">Payable</field>
+            <field name="parent" ref="account_type_template_liability_current"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_current_tax">
+            <field name="name">Tax</field>
+            <field name="parent" ref="account_type_template_liability_current"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_long_term">
+            <field name="name">Long-term</field>
+            <field name="parent" ref="account_type_template_liability"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_equity">
+            <field name="name">Equity</field>
+            <field name="sequence" eval="30"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
+            <field name="balance_sheet" eval="True"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_income">
+            <field name="name">Income</field>
+            <field name="parent" ref="account_type_template_equity"/>
+            <field name="sequence" eval="40"/>
+            <field name="income_statement" eval="True"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_revenue">
+            <field name="name">Revenue</field>
+            <field name="parent" ref="account_type_template_income"/>
+            <field name="sequence" eval="10"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_expense">
+            <field name="name">Expense</field>
+            <field name="parent" ref="account_type_template_income"/>
+            <field name="sequence" eval="20"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_off_balance">
+            <field name="name">Off-Balance</field>
+            <field name="sequence" eval="60"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
+        </record>
+                
         <record model="account.account.template" id="root">
-		<field name="name">Unified Chart of Accounts</field>
-		<field name="kind">view</field>
-	</record>
+				<field name="name">Unified Chart of Accounts</field>
+				<field name="kind">view</field>
+		  </record>
 	
         <record model="account.account.template" id="1">
 		<field name="name">Assets</field>
