@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-#This file is part of Tryton.  The COPYRIGHT file at the top level of
-#this repository contains the full copyright notices and license terms.
-
 from setuptools import setup, find_packages
 import re
 
@@ -39,7 +36,7 @@ setup(name='trytond_account_ucoa',
         'Intended Audience :: Financial and Insurance Industry',
         'Intended Audience :: Legal Industry',
         'License :: OSI Approved :: GNU General Public License (GPL)',
-        'Natural Language :: French',
+        'Natural Language :: English',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Office/Business',

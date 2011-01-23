@@ -1,11 +1,11 @@
 {
     "name" : "Unified Chart of Accounts for US Non-Profits",
-    "version" : "1.3.9",
+    "version" : "1.4.0",
     "author" : "Free Geek Twin Cities",
     'email': 'brian@freegeektwincities.org',
-    'website': 'http://code.google.com/p/tryton-ucoa/',
+    'website': 'http://tryton-ucoa.googlecode.com/',
     "category" : "Accounting",
-    "description": "Defines an account template for US non-profit/charitable organizations, based on work from NCCS/Urban Institute: http://nccs.urban.org/projects/ucoa.cfm",
+    "description": "Defines an account template for US non-profit/charitable organizations.",
     "depends" : [
         "account",
     ],
