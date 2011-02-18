@@ -62,21 +62,21 @@
             <field name="name">Cash in bank-operating</field>
             <field name="code">1010</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash-in-bank"/>
+            <field name="type" ref="cash"/>
             <field name="parent" ref="1000"/>
         </record>
         <record model="account.account.template" id="1020">
             <field name="name">Cash in bank-payroll</field>
             <field name="code">1020</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash-in-bank"/>
+            <field name="type" ref="cash"/>
             <field name="parent" ref="1000"/>
         </record>
         <record model="account.account.template" id="1040">
             <field name="name">Petty Cash</field>
             <field name="code">1040</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash-on-hand"/>
+            <field name="type" ref="cash"/>
             <field name="parent" ref="1000"/>
         </record>
         <record model="account.account.template" id="2">
