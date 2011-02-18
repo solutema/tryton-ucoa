@@ -109,7 +109,7 @@
             <field name="name">Accrued Liabilities</field>
             <field name="code">2100</field>
             <field name="kind">view</field>
-            <field name="parent" ref="root"/>
+            <field name="parent" ref="2000"/>
         </record>
         <record model="account.account.template" id="2140">
             <field name="name">Accrued sales taxes</field>
