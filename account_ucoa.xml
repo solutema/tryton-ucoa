@@ -79,6 +79,7 @@
             <field name="type" ref="cash"/>
             <field name="parent" ref="1000"/>
         </record>
+
         <record model="account.account.template" id="2">
             <field name="name">Liabilities</field>
             <field name="code">2</field>
@@ -117,6 +118,55 @@
             <field name="kind">other</field>
             <field name="type" ref="accrued_liability"/>
             <field name="parent" ref="2100"/>
+        </record>
+        
+	<record model="account.account.template" id="3">
+            <field name="name">Equity</field>
+            <field name="code">3</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="4">
+            <field name="name">Contributions,Support</field>
+            <field name="code">4</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="5">
+            <field name="name">Earned Revenues</field>
+            <field name="code">5</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="6">
+            <field name="name">Other Revenue</field>
+            <field name="code">6</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="7">
+            <field name="name">Expenses - Personnel Related</field>
+            <field name="code">7</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="8">
+            <field name="name">Expenses - Non-Personnel</field>
+            <field name="code">8</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
+        </record>
+        
+	<record model="account.account.template" id="9">
+            <field name="name">Non-GAAP Expenses</field>
+            <field name="code">9</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="root"/>
         </record>
         
     </data>
