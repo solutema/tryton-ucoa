@@ -2,56 +2,124 @@
 <tryton>
     <data>
 
-        <record model="account.account.type.template"
-            id="ucoa">
+        <record model="account.account.type.template" id="account_type_template_ucoa">
             <field name="name">US Unified Account Type Chart</field>
             <field name="sequence" eval="10"/>
         </record>
+        <!-- Account type templates re-used from Tryton "account" module -->
         <record model="account.account.type.template"
-            id="asset">
-            <field name="name">Assets</field>
+            id="account_type_template_asset">
+            <field name="name">Asset</field>
             <field name="sequence" eval="10"/>
-            <field name="parent" ref="ucoa"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
             <field name="balance_sheet" eval="True"/>
         </record>
         <record model="account.account.type.template"
-            id="cash">
+            id="account_type_template_asset_current">
+            <field name="name">Current</field>
+            <field name="parent" ref="account_type_template_asset"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_current_cash">
             <field name="name">Cash</field>
+            <field name="parent" ref="account_type_template_asset_current"/>
             <field name="sequence" eval="10"/>
-            <field name="parent" ref="asset"/>
         </record>
-         <record model="account.account.type.template"
-            id="liability">
-            <field name="name">Liabilities</field>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_current_receivable">
+            <field name="name">Receivable</field>
+            <field name="parent" ref="account_type_template_asset_current"/>
             <field name="sequence" eval="20"/>
-            <field name="parent" ref="ucoa"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_asset_long_term">
+            <field name="name">Long-term</field>
+            <field name="parent" ref="account_type_template_asset"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability">
+            <field name="name">Liability</field>
+            <field name="sequence" eval="20"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
             <field name="balance_sheet" eval="True"/>
         </record>
         <record model="account.account.type.template"
-            id="payable">
-            <field name="name">Payables</field>
+            id="account_type_template_liability_current">
+            <field name="name">Current</field>
+            <field name="parent" ref="account_type_template_liability"/>
             <field name="sequence" eval="10"/>
-            <field name="parent" ref="liability"/>
         </record>
         <record model="account.account.type.template"
-            id="accrued_liability">
-            <field name="name">Accrued Liabilities</field>
+            id="account_type_template_liability_current_payable">
+            <field name="name">Payable</field>
+            <field name="parent" ref="account_type_template_liability_current"/>
+            <field name="sequence" eval="10"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_current_tax">
+            <field name="name">Tax</field>
+            <field name="parent" ref="account_type_template_liability_current"/>
             <field name="sequence" eval="20"/>
-            <field name="parent" ref="liability"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_liability_long_term">
+            <field name="name">Long-term</field>
+            <field name="parent" ref="account_type_template_liability"/>
+            <field name="sequence" eval="20"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_equity">
+            <field name="name">Equity</field>
+            <field name="sequence" eval="30"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
+            <field name="balance_sheet" eval="True"/>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_income">
+            <field name="name">Income</field>
+            <field name="parent" ref="account_type_template_equity"/>
+            <field name="sequence" eval="40"/>
+            <field name="income_statement" eval="True"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_revenue">
+            <field name="name">Revenue</field>
+            <field name="parent" ref="account_type_template_income"/>
+            <field name="sequence" eval="10"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_expense">
+            <field name="name">Expense</field>
+            <field name="parent" ref="account_type_template_income"/>
+            <field name="sequence" eval="20"/>
+            <field name="display_balance">credit-debit</field>
+        </record>
+        <record model="account.account.type.template"
+            id="account_type_template_off_balance">
+            <field name="name">Off-Balance</field>
+            <field name="sequence" eval="60"/>
+            <field name="parent" ref="account_type_template_ucoa"/>
         </record>
         
         
-        <record model="account.account.template" id="root">
-            <field name="name">Unified Chart of Accounts</field>
-            <field name="kind">view</field>
-            <field name="type" ref="ucoa"/>
-        </record>
-        <record model="account.account.template" id="1">
-            <field name="name">Assets</field>
-            <field name="code">1</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+    <record model="account.account.template" id="root">
+        <field name="name">Unified Chart of Accounts</field>
+        <field name="kind">view</field>
+        <field name="type" ref="account_type_template_ucoa"/>
+    </record>
+        
+    <record model="account.account.template" id="1">
+        <field name="name">Assets</field>
+        <field name="code">1</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
+        
+        <!-- CASH ASSETS -->
         <record model="account.account.template" id="1000">
             <field name="name">Cash</field>
             <field name="code">1000</field>
@@ -59,33 +127,70 @@
             <field name="parent" ref="1"/>
         </record>
         <record model="account.account.template" id="1010">
-            <field name="name">Cash in bank-operating</field>
+            <field name="name">Cash in Bank - Operating</field>
             <field name="code">1010</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash"/>
+            <field name="type" ref="account_type_template_asset_current_cash"/>
             <field name="parent" ref="1000"/>
         </record>
         <record model="account.account.template" id="1020">
-            <field name="name">Cash in bank-payroll</field>
+            <field name="name">Cash in Bank - Payroll</field>
             <field name="code">1020</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash"/>
+            <field name="type" ref="account_type_template_asset_current_cash"/>
             <field name="parent" ref="1000"/>
         </record>
         <record model="account.account.template" id="1040">
             <field name="name">Petty Cash</field>
             <field name="code">1040</field>
             <field name="kind">other</field>
-            <field name="type" ref="cash"/>
+            <field name="type" ref="account_type_template_asset_current_cash"/>
             <field name="parent" ref="1000"/>
         </record>
-
-        <record model="account.account.template" id="2">
-            <field name="name">Liabilities</field>
-            <field name="code">2</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
+        <record model="account.account.template" id="1070">
+            <field name="name">Savings &amp; Short-Term Investments</field>
+            <field name="code">1070</field>
+            <field name="kind">other</field>
+            <field name="type" ref="account_type_template_asset_current_cash"/>
+            <field name="parent" ref="1000"/>
         </record>
+        
+        <!-- ACCOUNTS RECEIVABLE -->
+        <record model="account.account.template" id="1100">
+            <field name="name">A/R</field>
+            <field name="code">1100</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="1"/>
+        </record>
+        <record model="account.account.template" id="1110">
+            <field name="name">Accounts Receivable</field>
+            <field name="code">1110</field>
+            <field name="kind">receivable</field>
+            <field name="type" ref="account_type_template_asset_current_receivable"/>
+            <field name="parent" ref="1100"/>
+        </record>
+        <record model="account.account.template" id="1115">
+            <field name="name">Doubtful Accounts Allowance</field>
+            <field name="code">1115</field>
+            <field name="kind">receivable</field>
+            <field name="type" ref="account_type_template_asset_current_receivable"/>
+            <field name="parent" ref="1100"/>
+        </record>
+        
+        <!-- CONTRIBUTIONS RECEIVABLE -->
+        <record model="account.account.template" id="1200">
+            <field name="name">Contributions Receivable</field>
+            <field name="code">1200</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="1"/>
+        </record>
+
+    <record model="account.account.template" id="2">
+        <field name="name">Liabilities</field>
+        <field name="code">2</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         <record model="account.account.template" id="2000">
             <field name="name">Payables</field>
             <field name="code">2000</field>
@@ -93,17 +198,17 @@
             <field name="parent" ref="2"/>
         </record>
         <record model="account.account.template" id="2010">
-            <field name="name">Accounts payable</field>
+            <field name="name">Accounts Payable</field>
             <field name="code">2010</field>
-            <field name="kind">other</field>
-            <field name="type" ref="payable"/>
+            <field name="kind">payable</field>
+            <field name="type" ref="account_type_template_liability_current_payable"/>
             <field name="parent" ref="2000"/>
         </record>
         <record model="account.account.template" id="2020">
-            <field name="name">Grants &amp; allocations payable</field>
+            <field name="name">Grants &amp; Allocations Payable</field>
             <field name="code">2020</field>
-            <field name="kind">other</field>
-            <field name="type" ref="payable"/>
+            <field name="kind">payable</field>
+            <field name="type" ref="account_type_template_liability_current_payable"/>
             <field name="parent" ref="2000"/>
         </record>
         <record model="account.account.template" id="2100">
@@ -113,61 +218,115 @@
             <field name="parent" ref="2000"/>
         </record>
         <record model="account.account.template" id="2140">
-            <field name="name">Accrued sales taxes</field>
+            <field name="name">Accrued Sales Taxes</field>
             <field name="code">2140</field>
-            <field name="kind">other</field>
-            <field name="type" ref="accrued_liability"/>
+            <field name="kind">payable</field>
+            <field name="type" ref="account_type_template_liability_current_tax"/>
             <field name="parent" ref="2100"/>
         </record>
         
-	<record model="account.account.template" id="3">
-            <field name="name">Equity</field>
-            <field name="code">3</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+    <record model="account.account.template" id="3">
+        <field name="name">Equity</field>
+        <field name="code">3</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
-	<record model="account.account.template" id="4">
-            <field name="name">Contributions,Support</field>
-            <field name="code">4</field>
+	<!-- Section 4: Contributions -->
+    <record model="account.account.template" id="4">
+        <field name="name">Contributions &amp; Support</field>
+        <field name="code">4</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
+        <record model="account.account.template" id="4000">
+            <field name="name">Revenue From Direct Contributions</field>
+            <field name="code">4000</field>
             <field name="kind">view</field>
-            <field name="parent" ref="root"/>
+            <field name="parent" ref="4"/>
+        </record>
+        <record model="account.account.template" id="4010">
+            <field name="name">Individual &amp; Small Business Contributions</field>
+            <field name="code">4010</field>
+            <field name="kind">revenue</field>
+            <field name="type" ref="account_type_template_revenue"/>
+            <field name="parent" ref="4000"/>
+        </record>
+        <record model="account.account.template" id="4020">
+            <field name="name">Corporate Contributions</field>
+            <field name="code">4020</field>
+            <field name="kind">revenue</field>
+            <field name="type" ref="account_type_template_revenue"/>
+            <field name="parent" ref="4000"/>
+        </record>
+        	   
+        	   
+        
+        <record model="account.account.template" id="4100">
+            <field name="name">Donated Goods &amp; Services Revenue</field>
+            <field name="code">4100</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="4"/>
+        </record>
+        <record model="account.account.template" id="4200">
+            <field name="name">Revenue from non-government grants</field>
+            <field name="code">4200</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="4"/>
+        </record>
+        <record model="account.account.template" id="4300">
+            <field name="name">Revenue from split-interest agreements</field>
+            <field name="code">4300</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="4"/>
+        </record>
+        <record model="account.account.template" id="4400">
+            <field name="name">Revenue from indirect contributions</field>
+            <field name="code">4400</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="4"/>
+        </record>
+        <record model="account.account.template" id="4500">
+            <field name="name">Revenue from government grants</field>
+            <field name="code">4500</field>
+            <field name="kind">view</field>
+            <field name="parent" ref="4"/>
         </record>
         
 	<record model="account.account.template" id="5">
-            <field name="name">Earned Revenues</field>
-            <field name="code">5</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+        <field name="name">Earned Revenues</field>
+        <field name="code">5</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
 	<record model="account.account.template" id="6">
-            <field name="name">Other Revenue</field>
-            <field name="code">6</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+        <field name="name">Other Revenue</field>
+        <field name="code">6</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
 	<record model="account.account.template" id="7">
-            <field name="name">Expenses - Personnel Related</field>
-            <field name="code">7</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+        <field name="name">Expenses - Personnel Related</field>
+        <field name="code">7</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
 	<record model="account.account.template" id="8">
-            <field name="name">Expenses - Non-Personnel</field>
-            <field name="code">8</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+        <field name="name">Expenses - Non-Personnel</field>
+        <field name="code">8</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
 	<record model="account.account.template" id="9">
-            <field name="name">Non-GAAP Expenses</field>
-            <field name="code">9</field>
-            <field name="kind">view</field>
-            <field name="parent" ref="root"/>
-        </record>
+        <field name="name">Expenses - Non-GAAP</field>
+        <field name="code">9</field>
+        <field name="kind">view</field>
+        <field name="parent" ref="root"/>
+    </record>
         
     </data>
 </tryton>
