@@ -9,6 +9,6 @@ Prerequisites
 
 Installation
 ------------
-Extract the archive into 'trytond/modules' with the directory name account_ucoa.
+Extract the archive and run 'python setup.py install' (may need root privileges).
 Restart trytond, and enable module via Tryton client.
 
