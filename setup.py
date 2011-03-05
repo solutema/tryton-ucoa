@@ -30,7 +30,7 @@ setup(name='trytond_account_ucoa',
                 + info.get('translation', []),
     },
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
         'Intended Audience :: Developers',
         'Intended Audience :: Financial and Insurance Industry',
