@@ -216,14 +216,14 @@
 		    <field name="type" ref="account_type_template_asset"/>
 		    <field name="reconcile" eval="True"/>
             <field name="deferral" eval="True"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Accounts receivable</field>
 	    </record>
 	    <record id="chart1115" model="account.account.template">
 		    <field name="code">1115</field>
 		    <field name="parent" ref="chart1100"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Doubtful accounts allowance</field>
 	    </record>
 	    <record id="chart1200" model="account.account.template">
@@ -236,7 +236,7 @@
 		    <field name="code">1210</field>
 		    <field name="parent" ref="chart1200"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Pledges receivable</field>
 	    </record>
 	    <record id="chart1215" model="account.account.template">
@@ -257,7 +257,7 @@
 		    <field name="code">1240</field>
 		    <field name="parent" ref="chart1200"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Grants receivable</field>
 	    </record>
 	    <record id="chart1245" model="account.account.template">
@@ -277,21 +277,21 @@
 		    <field name="code">1310</field>
 		    <field name="parent" ref="chart1300"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Employee &amp; trustee receivables</field>
 	    </record>
 	    <record id="chart1320" model="account.account.template">
 		    <field name="code">1320</field>
 		    <field name="parent" ref="chart1300"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Notes/loans receivable</field>
 	    </record>
 	    <record id="chart1325" model="account.account.template">
 		    <field name="code">1325</field>
 		    <field name="parent" ref="chart1300"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">receivable</field>
 		    <field name="name">Doubtful notes/loans allowance</field>
 	    </record>
 	    <record id="chart1400" model="account.account.template">
@@ -491,14 +491,14 @@
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
 		    <field name="reconcile" eval="True"/>
             <field name="deferral" eval="True"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Accounts payable</field>
 	    </record>
 	    <record id="chart2020" model="account.account.template">
 		    <field name="code">2020</field>
 		    <field name="parent" ref="chart2000"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Grants &amp; allocations payable</field>
 	    </record>
 	    <record id="chart2100" model="account.account.template">
@@ -511,7 +511,7 @@
 		    <field name="code">2110</field>
 		    <field name="parent" ref="chart2100"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Accrued  payroll</field>
 	    </record>
 	    <record id="chart2120" model="account.account.template">
@@ -525,21 +525,21 @@
 		    <field name="code">2130</field>
 		    <field name="parent" ref="chart2100"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Accrued payroll taxes</field>
 	    </record>
 	    <record id="chart2140" model="account.account.template">
 		    <field name="code">2140</field>
 		    <field name="parent" ref="chart2100"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Accrued sales taxes</field>
 	    </record>
 	    <record id="chart2150" model="account.account.template">
 		    <field name="code">2150</field>
 		    <field name="parent" ref="chart2100"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Accrued expenses - other</field>
 	    </record>
 	    <record id="chart2300" model="account.account.template">
@@ -566,7 +566,7 @@
 		    <field name="code">2410</field>
 		    <field name="parent" ref="chart2"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Refundable advances</field>
 	    </record>
 	    <record id="chart2500" model="account.account.template">
@@ -579,28 +579,28 @@
 		    <field name="code">2510</field>
 		    <field name="parent" ref="chart2500"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Trustee &amp; employee loans payable</field>
 	    </record>
 	    <record id="chart2550" model="account.account.template">
 		    <field name="code">2550</field>
 		    <field name="parent" ref="chart2500"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Line of credit</field>
 	    </record>
 	    <record id="chart2560" model="account.account.template">
 		    <field name="code">2560</field>
 		    <field name="parent" ref="chart2500"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Current portion - long-term loan</field>
 	    </record>
 	    <record id="chart2570" model="account.account.template">
 		    <field name="code">2570</field>
 		    <field name="parent" ref="chart2500"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Short-term liabilities - other</field>
 	    </record>
 	    <record id="chart2610" model="account.account.template">
@@ -620,14 +620,14 @@
 		    <field name="code">2710</field>
 		    <field name="parent" ref="chart2700"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Bonds payable</field>
 	    </record>
 	    <record id="chart2730" model="account.account.template">
 		    <field name="code">2730</field>
 		    <field name="parent" ref="chart2700"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Mortgages payable</field>
 	    </record>
 	    <record id="chart2750" model="account.account.template">
@@ -641,7 +641,7 @@
 		    <field name="code">2770</field>
 		    <field name="parent" ref="chart2700"/>
 		    <field name="type" ref="account_type_template_liability_current_payable"/>
-		    <field name="kind">other</field>
+		    <field name="kind">payable</field>
 		    <field name="name">Long-term liabilities - other</field>
 	    </record>
 	    <record id="chart2810" model="account.account.template">
@@ -735,21 +735,21 @@
 		    <field name="code">4010</field>
 		    <field name="parent" ref="chart4000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Individual/small business contributions</field>
 	    </record>
 	    <record id="chart4020" model="account.account.template">
 		    <field name="code">4020</field>
 		    <field name="parent" ref="chart4000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Corporate contributions</field>
 	    </record>
 	    <record id="chart4070" model="account.account.template">
 		    <field name="code">4070</field>
 		    <field name="parent" ref="chart4000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Legacies &amp; bequests</field>
 	    </record>
 	    <record id="chart4075" model="account.account.template">
@@ -776,14 +776,14 @@
 		    <field name="code">4110</field>
 		    <field name="parent" ref="chart4100"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Donated professional services-GAAP</field>
 	    </record>
 	    <record id="chart4120" model="account.account.template">
 		    <field name="code">4120</field>
 		    <field name="parent" ref="chart4100"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Donated other services - non-GAAP</field>
 	    </record>
 	    <record id="chart4130" model="account.account.template">
@@ -871,21 +871,21 @@
 		    <field name="code">4410</field>
 		    <field name="parent" ref="chart4400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">United Way or CFC contributions</field>
 	    </record>
 	    <record id="chart4420" model="account.account.template">
 		    <field name="code">4420</field>
 		    <field name="parent" ref="chart4400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Affiliated organizations revenue</field>
 	    </record>
 	    <record id="chart4430" model="account.account.template">
 		    <field name="code">4430</field>
 		    <field name="parent" ref="chart4400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Fundraising agencies revenue</field>
 	    </record>
 	    <record id="chart4500" model="account.account.template">
@@ -932,35 +932,35 @@
 		    <field name="code">5010</field>
 		    <field name="parent" ref="chart5000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Agency (government) contracts/fees</field>
 	    </record>
 	    <record id="chart5020" model="account.account.template">
 		    <field name="code">5020</field>
 		    <field name="parent" ref="chart5000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Federal contracts/fees</field>
 	    </record>
 	    <record id="chart5030" model="account.account.template">
 		    <field name="code">5030</field>
 		    <field name="parent" ref="chart5000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">State contracts/fees</field>
 	    </record>
 	    <record id="chart5040" model="account.account.template">
 		    <field name="code">5040</field>
 		    <field name="parent" ref="chart5000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Local government contracts/fees</field>
 	    </record>
 	    <record id="chart5080" model="account.account.template">
 		    <field name="code">5080</field>
 		    <field name="parent" ref="chart5000"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Medicare/Medicaid payments</field>
 	    </record>
 	    <record id="chart5100" model="account.account.template">
@@ -973,7 +973,7 @@
 		    <field name="code">5180</field>
 		    <field name="parent" ref="chart5100"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Program service fees</field>
 	    </record>
 	    <record id="chart5185" model="account.account.template">
@@ -993,14 +993,14 @@
 		    <field name="code">5210</field>
 		    <field name="parent" ref="chart5200"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Membership dues-individuals</field>
 	    </record>
 	    <record id="chart5220" model="account.account.template">
 		    <field name="code">5220</field>
 		    <field name="parent" ref="chart5200"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Assessments and dues-organizations</field>
 	    </record>
 	    <record id="chart5300" model="account.account.template">
@@ -1013,49 +1013,49 @@
 		    <field name="code">5310</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Interest-savings/short-term investments</field>
 	    </record>
 	    <record id="chart5320" model="account.account.template">
 		    <field name="code">5320</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Dividends &amp; interest - securities</field>
 	    </record>
 	    <record id="chart5330" model="account.account.template">
 		    <field name="code">5330</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Real estate rent - debt-financed</field>
 	    </record>
 	    <record id="chart5335" model="account.account.template">
 		    <field name="code">5335</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Real estate rental cost - debt-financed</field>
 	    </record>
 	    <record id="chart5340" model="account.account.template">
 		    <field name="code">5340</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Real estate rent - not debt-financed</field>
 	    </record>
 	    <record id="chart5345" model="account.account.template">
 		    <field name="code">5345</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Real estate rental cost - not debt-financed</field>
 	    </record>
 	    <record id="chart5350" model="account.account.template">
 		    <field name="code">5350</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Personal property rent</field>
 	    </record>
 	    <record id="chart5355" model="account.account.template">
@@ -1069,14 +1069,14 @@
 		    <field name="code">5360</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Other investment income</field>
 	    </record>
 	    <record id="chart5370" model="account.account.template">
 		    <field name="code">5370</field>
 		    <field name="parent" ref="chart5300"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Securities sales - gross</field>
 	    </record>
 	    <record id="chart5375" model="account.account.template">
@@ -1096,7 +1096,7 @@
 		    <field name="code">5410</field>
 		    <field name="parent" ref="chart5400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Non-inventory sales - gross</field>
 	    </record>
 	    <record id="chart5415" model="account.account.template">
@@ -1110,7 +1110,7 @@
 		    <field name="code">5440</field>
 		    <field name="parent" ref="chart5400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Gross sales - inventory</field>
 	    </record>
 	    <record id="chart5445" model="account.account.template">
@@ -1124,21 +1124,21 @@
 		    <field name="code">5450</field>
 		    <field name="parent" ref="chart5400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Advertising revenue</field>
 	    </record>
 	    <record id="chart5460" model="account.account.template">
 		    <field name="code">5460</field>
 		    <field name="parent" ref="chart5400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Affiliate revenues from other entities</field>
 	    </record>
 	    <record id="us_a_recv" model="account.account.template">
 		    <field name="code">5490</field>
 		    <field name="parent" ref="chart5400"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Misc revenue</field>
 	    </record>
 	    <record id="chart5800" model="account.account.template">
@@ -1151,14 +1151,14 @@
 		    <field name="code">5810</field>
 		    <field name="parent" ref="chart5800"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Special events - non-gift revenue</field>
 	    </record>
 	    <record id="chart5820" model="account.account.template">
 		    <field name="code">5820</field>
 		    <field name="parent" ref="chart5800"/>
 		    <field name="type" ref="account_type_template_income"/>
-		    <field name="kind">other</field>
+		    <field name="kind">revenue</field>
 		    <field name="name">Special events - gift revenue</field>
 	    </record>
 	    <record id="chart6800" model="account.account.template">
@@ -1218,35 +1218,35 @@
 		    <field name="code">7010</field>
 		    <field name="parent" ref="chart7000"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Contracts - program-related</field>
 	    </record>
 	    <record id="chart7020" model="account.account.template">
 		    <field name="code">7020</field>
 		    <field name="parent" ref="chart7000"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Grants to other organizations</field>
 	    </record>
 	    <record id="chart7040" model="account.account.template">
 		    <field name="code">7040</field>
 		    <field name="parent" ref="chart7000"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Awards &amp; grants - individuals</field>
 	    </record>
 	    <record id="chart7050" model="account.account.template">
 		    <field name="code">7050</field>
 		    <field name="parent" ref="chart7000"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Specific assistance - individuals</field>
 	    </record>
 	    <record id="chart7060" model="account.account.template">
 		    <field name="code">7060</field>
 		    <field name="parent" ref="chart7000"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Benefits paid to or for members</field>
 	    </record>
 	    <record id="chart7200" model="account.account.template">
@@ -1259,35 +1259,35 @@
 		    <field name="code">7210</field>
 		    <field name="parent" ref="chart7200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Officers &amp; directors salaries</field>
 	    </record>
 	    <record id="chart7220" model="account.account.template">
 		    <field name="code">7220</field>
 		    <field name="parent" ref="chart7200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Salaries &amp; wages - other</field>
 	    </record>
 	    <record id="chart7230" model="account.account.template">
 		    <field name="code">7230</field>
 		    <field name="parent" ref="chart7200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Pension plan contributions</field>
 	    </record>
 	    <record id="chart7240" model="account.account.template">
 		    <field name="code">7240</field>
 		    <field name="parent" ref="chart7200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Employee benefits - not pension</field>
 	    </record>
 	    <record id="chart7250" model="account.account.template">
 		    <field name="code">7250</field>
 		    <field name="parent" ref="chart7200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Payroll taxes, etc.</field>
 	    </record>
 	    <record id="chart7500" model="account.account.template">
@@ -1300,49 +1300,49 @@
 		    <field name="code">7510</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Fundraising fees</field>
 	    </record>
 	    <record id="chart7520" model="account.account.template">
 		    <field name="code">7520</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Accounting fees</field>
 	    </record>
 	    <record id="chart7530" model="account.account.template">
 		    <field name="code">7530</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Legal fees</field>
 	    </record>
 	    <record id="chart7540" model="account.account.template">
 		    <field name="code">7540</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Professional fees - other</field>
 	    </record>
 	    <record id="chart7550" model="account.account.template">
 		    <field name="code">7550</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Temporary help - contract</field>
 	    </record>
 	    <record id="chart7580" model="account.account.template">
 		    <field name="code">7580</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Donated professional services - GAAP</field>
 	    </record>
 	    <record id="chart7590" model="account.account.template">
 		    <field name="code">7590</field>
 		    <field name="parent" ref="chart7500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Donated other services - non-GAAP</field>
 	    </record>
 	    <record id="chart8100" model="account.account.template">
@@ -1355,56 +1355,56 @@
 		    <field name="code">8110</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Supplies</field>
 	    </record>
 	    <record id="chart8120" model="account.account.template">
 		    <field name="code">8120</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Donated materials &amp; supplies</field>
 	    </record>
 	    <record id="chart8130" model="account.account.template">
 		    <field name="code">8130</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Telephone &amp; telecommunications</field>
 	    </record>
 	    <record id="chart8140" model="account.account.template">
 		    <field name="code">8140</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Postage &amp; shipping</field>
 	    </record>
 	    <record id="chart8150" model="account.account.template">
 		    <field name="code">8150</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Mailing services</field>
 	    </record>
 	    <record id="chart8170" model="account.account.template">
 		    <field name="code">8170</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Printing &amp; copying</field>
 	    </record>
 	    <record id="chart8180" model="account.account.template">
 		    <field name="code">8180</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Books, subscriptions, references</field>
 	    </record>
 	    <record id="chart8190" model="account.account.template">
 		    <field name="code">8190</field>
 		    <field name="parent" ref="chart8100"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">In-house publications</field>
 	    </record>
 	    <record id="chart8200" model="account.account.template">
@@ -1417,42 +1417,42 @@
 		    <field name="code">8210</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Rent, parking, other occupancy</field>
 	    </record>
 	    <record id="chart8220" model="account.account.template">
 		    <field name="code">8220</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Utilities</field>
 	    </record>
 	    <record id="chart8230" model="account.account.template">
 		    <field name="code">8230</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Real estate taxes</field>
 	    </record>
 	    <record id="chart8240" model="account.account.template">
 		    <field name="code">8240</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Personal property taxes</field>
 	    </record>
 	    <record id="chart8250" model="account.account.template">
 		    <field name="code">8250</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Mortgage interest</field>
 	    </record>
 	    <record id="chart8260" model="account.account.template">
 		    <field name="code">8260</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Equipment rental &amp; maintenance</field>
 	    </record>
 	    <record id="chart8270" model="account.account.template">
@@ -1473,7 +1473,7 @@
 		    <field name="code">8290</field>
 		    <field name="parent" ref="chart8200"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Donated facilities </field>
 	    </record>
 	    <record id="chart8300" model="account.account.template">
@@ -1486,14 +1486,14 @@
 		    <field name="code">8310</field>
 		    <field name="parent" ref="chart8300"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Travel</field>
 	    </record>
 	    <record id="chart8320" model="account.account.template">
 		    <field name="code">8320</field>
 		    <field name="parent" ref="chart8300"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Conferences, conventions, meetings</field>
 	    </record>
 	    <record id="chart8500" model="account.account.template">
@@ -1513,41 +1513,41 @@
 		    <field name="code">8520</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Insurance - non-employee related</field>
 	    </record>
 	    <record id="chart8530" model="account.account.template">
 		    <field name="code">8530</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Membership dues - organization</field>	</record>
 	    <record id="chart8540" model="account.account.template">
 		    <field name="code">8540</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Staff development</field>
 	    </record>
 	    <record id="chart8550" model="account.account.template">
 		    <field name="code">8550</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">List rental</field>
 	    </record>
 	    <record id="chart8560" model="account.account.template">
 		    <field name="code">8560</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Outside computer services</field>
 	    </record>
 	    <record id="chart8570" model="account.account.template">
 		    <field name="code">8570</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Advertising expenses</field>
 	    </record>
 	    <record id="chart8580" model="account.account.template">
@@ -1561,7 +1561,7 @@
 		    <field name="code">8590</field>
 		    <field name="parent" ref="chart8500"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Other expenses</field>
 	    </record>
 	    <record id="chart8600" model="account.account.template">
@@ -1574,42 +1574,42 @@
 		    <field name="code">8610</field>
 		    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Bad debt expense </field>
 	    </record>
 	    <record id="chart8620" model="account.account.template">
 		    <field name="code">8620</field>
 		    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Sales taxes</field>
 	    </record>
 	    <record id="chart8630" model="account.account.template">
 		    <field name="code">8630</field>
 		    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">UBITaxes </field>
 	    </record>
 	    <record id="chart8650" model="account.account.template">
 		    <field name="code">8650</field>
 		    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Taxes - other</field>
 	    </record>
 	    <record id="chart8660" model="account.account.template">
 		    <field name="code">8660</field>
 			    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Fines, penalties, judgments</field>
 	    </record>
 	    <record id="chart8670" model="account.account.template">
 		    <field name="code">8670</field>
 		    <field name="parent" ref="chart8600"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Organizational (corp) expenses</field>
 	    </record>
 	    <record id="chart9800" model="account.account.template">
@@ -1622,28 +1622,28 @@
 		    <field name="code">9810</field>
 		    <field name="parent" ref="chart9800"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Capital purchases - land</field>
 	    </record>
 	    <record id="chart9820" model="account.account.template">
 		    <field name="code">9820</field>
 		    <field name="parent" ref="chart9800"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Capital purchases - building</field>
 	    </record>
 	    <record id="chart9830" model="account.account.template">
 		    <field name="code">9830</field>
 		    <field name="parent" ref="chart9800"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Capital purchases - equipment</field>
 	    </record>
 	    <record id="chart9840" model="account.account.template">
 		    <field name="code">9840</field>
 		    <field name="parent" ref="chart9800"/>
 		    <field name="type" ref="account_type_template_asset"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Capital purchases - vehicles</field>
 	    </record>
 	    <record id="chart9900" model="account.account.template">
@@ -1656,21 +1656,21 @@
 		    <field name="code">9910</field>
 		    <field name="parent" ref="chart9900"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Payments to affiliates</field>
 	    </record>
 	    <record id="chart9920" model="account.account.template">
 		    <field name="code">9920</field>
 		    <field name="parent" ref="chart9900"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Additions to reserves</field>
 	    </record>
 	    <record id="chart9930" model="account.account.template">
 		    <field name="code">9930</field>
 		    <field name="parent" ref="chart9900"/>
 		    <field name="type" ref="account_type_template_expense"/>
-		    <field name="kind">other</field>
+		    <field name="kind">expense</field>
 		    <field name="name">Program administration allocations</field>
 	    </record>
 	
