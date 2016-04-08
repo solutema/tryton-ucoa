@@ -1,0 +1,3 @@
+Tryton account "flavor" based on the NCCS Unified Chart of Accounts (UCOA), helping United States-based non-profit organizations to, in the words of the NCCS: "quickly and reliably translate their financial statements into the categories required by the IRS Form 990, the federal Office of Management and Budget, and into other standard reporting formats. UCOA also seeks to promote uniform accounting practices throughout the nonprofit sector."
+
+For more information on the UCOA, visit http://nccs.urban.org/projects/ucoa.cfm
